@@ -29,7 +29,6 @@ button {
     width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -39,9 +38,6 @@ button {
 #header .gnb_logo img {
     width: 198px;
     height: 48px;
-}
-#header .nav {
-    margin-left:-135px;
 }
 #header .nav ul{
     display: flex;
@@ -67,6 +63,7 @@ button {
 /* header>etv_menu */
 #header .etc_menu {
     padding-right: 10px;
+    margin-left: auto;
 }
 #header .etc_menu ul{
     display: flex;
@@ -107,14 +104,85 @@ button {
 #section_1 {
     width: 100%;
     height: 500px;
-    background-color: #f3efec;
     position: relative;
     border-bottom:1px solid #ddd;
+}
+.slider {
+    display: flex;
+    width: calc(100% * 6);
+    position: relative;
+    animation-name: imgslider;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.65, 0.03, 0.35, 0.97);
+
+}
+@keyframes imgslider {
+    0%{
+        left: 0%;
+    }
+    15%{
+        left: calc(-100% * 1);
+    }
+    20% {
+        left: calc(-100% * 1);
+    }
+    35% {
+        left: calc(-100% * 2);
+    }
+    40%{
+        left: calc(-100% * 2);
+    }
+    55% {
+        left: calc(-100% * 3);
+    }
+    60%{
+        left: calc(-100% * 3);
+    }
+    75% {
+        left: calc(-100% * 4);
+    }
+    80%{
+        left: calc(-100% * 4);
+    }
+    95% {
+        left: calc(-100% * 5);
+    }
+    100%{
+        left: calc(-100% * 5);
+    }
+}
+#section_1 .section_banner {
+    width: 100%;
+    height: 500px;
+    margin: 0% auto;
+    position: relative;
+    background-position: center;
+}
+#section_1 .section_banner_img1 {
+    background: #f3efec url('../img/main_slide_01.png');
+}
+#section_1 .section_banner_img2 {
+    background: #8a70d4 url(../img/main_slide_02.png);
+}
+#section_1 .section_banner_img3 {
+    background: #f2f3f7 url(../img/main_slide_03.png);
+}
+#section_1 .section_banner_img4 {
+    background: #eed3cc url(../img/main_slide_04.png);
+}
+#section_1 .section_banner_img5 {
+    background: #d0e7cf url(../img/main_slide_05.png);
+}
+#section_1 .section_textbox {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
 }
 #section_1 .section_box {
     position: absolute;
     top: 100px;
-    left: 260px;
+    left: 80px;
 }
 #section_1 .section_box h2 {
     font-size: 35px;
@@ -142,12 +210,6 @@ button {
 }
 #section_1  .section_box button:hover {
     background-color: #fff;
-}
-#section_1 .section_imgbanner {
-    background-image: url(../img/main_slide_05.png);
-    width: 1920px;
-    height: 500px;
-    margin: 0% auto;
 }
 #section_1 .section_box_menu {
     width: 100%;
@@ -381,7 +443,8 @@ button {
 /* section_3 */
 #section_3 {
     width: 100%;
-    background-image: url(../img/feature-bg.jpg);
+    height: 780px;
+    background: url(../img/feature-bg.jpg) center no-repeat;
     margin-top: 30px;
 }
 .section_3_box {
