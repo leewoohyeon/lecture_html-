@@ -115,7 +115,6 @@ button {
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.65, 0.03, 0.35, 0.97);
-
 }
 @keyframes imgslider {
     0%{
@@ -157,22 +156,21 @@ button {
     height: 500px;
     margin: 0% auto;
     position: relative;
-    background-position: center;
 }
 #section_1 .section_banner_img1 {
-    background: #f3efec url('../img/main_slide_01.png');
+    background: #f3efec url('../img/main_slide_01.png') center;
 }
 #section_1 .section_banner_img2 {
-    background: #8a70d4 url(../img/main_slide_02.png);
+    background: #8a70d4 url(../img/main_slide_02.png) center;
 }
 #section_1 .section_banner_img3 {
-    background: #f2f3f7 url(../img/main_slide_03.png);
+    background: #f2f3f7 url(../img/main_slide_03.png) center;
 }
 #section_1 .section_banner_img4 {
-    background: #eed3cc url(../img/main_slide_04.png);
+    background: #eed3cc url(../img/main_slide_04.png) center;
 }
 #section_1 .section_banner_img5 {
-    background: #d0e7cf url(../img/main_slide_05.png);
+    background: #d0e7cf url(../img/main_slide_05.png) center;
 }
 #section_1 .section_textbox {
     position: relative;
@@ -207,6 +205,14 @@ button {
     font-size: 15px;
     cursor: pointer;
     transition: .2s;
+}
+#section_1 .section_banner_img2 h2,
+#section_1 .section_banner_img2 p {
+    color:#fff;
+}
+#section_1 .section_banner_img2 button {
+    border: 1px solid #fff;
+    color: #fff;
 }
 #section_1  .section_box button:hover {
     background-color: #fff;
@@ -426,8 +432,7 @@ button {
 }
 /* siection_2_imgbox */
 .section_2_imgbox {
-    background-image: url(../img/find-service.png);
-    background-color: #e1f5ff;
+    background:#e1f5ff url(../img/find-service.png);
     width: 750px;
     height: 200px;
     margin-top: 20px;
