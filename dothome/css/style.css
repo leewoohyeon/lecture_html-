@@ -20,6 +20,9 @@ button {
     cursor: pointer;
     background-color: #fff;
 }
+input {
+    outline: none;
+}
 /* header */
 #header {
     width: 100%;
